@@ -18,11 +18,11 @@ def skills():
 def about():
     return render_template('about.html')
 
-@app.route('contact', methods=['GET', 'POST'])
-def contact():
-            if request.method == 'POST': #Form submission
-                  pass
-            return render_template('contact.html')
+# @app.route('contact', methods=['GET', 'POST'])
+# def contact():
+#             if request.method == 'POST': #Form submission
+#                   pass
+#             return render_template('contact.html')
 
 if __name__ == '__main__':
-      app.run(debug=True)
+      app.run()
